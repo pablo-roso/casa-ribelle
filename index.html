@@ -1,254 +1,362 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa Ribelle — Italienische Trattoria in Freiburg</title>
-<meta name="description" content="Casa Ribelle in Freiburg im Breisgau: Pizza napoletana, mediterrane Küche und Aperitivo-Bar am Rotteckring, nahe dem Stadttheater. Website-Entwurf.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Casa Ribelle — Pizza Napoletana und Aperitivo am Rotteckring 2</title>
+<meta name="description" content="Casa Ribelle, Rotteckring 2 in Freiburg: neapolitanische Pizza aus dem Ofen, mediterrane Küche und Aperitivo-Bar — gegenüber dem Stadttheater. Die Regeln der Pizza Napoletana, und wo wir sie brechen." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1a18'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23e8c98a'/%3E%3Ccircle cx='16' cy='16' r='7.5' fill='%23c2402c'/%3E%3Ccircle cx='11' cy='9' r='1.6' fill='%231d1a18'/%3E%3Ccircle cx='23' cy='13' r='1.4' fill='%231d1a18'/%3E%3Ccircle cx='19' cy='25' r='1.5' fill='%231d1a18'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav container">
-    <a class="brand" href="#top">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="21" fill="#c1442c"/>
-        <path d="M24 6 L40 40 L8 40 Z" fill="#fbf3e6" opacity="0.95"/>
-        <circle cx="20" cy="28" r="2.6" fill="#c1442c"/>
-        <circle cx="27" cy="32" r="2.2" fill="#c1442c"/>
-        <circle cx="24" cy="22" r="2" fill="#c1442c"/>
-        <path d="M15 40c2-5 5-7 6-11" stroke="#5f6f39" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <ellipse cx="14" cy="27" rx="3.4" ry="2" fill="#5f6f39" transform="rotate(-30 14 27)"/>
+<a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Casa Ribelle — Start">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="#e8c98a" />
+        <circle cx="20" cy="20" r="12.5" fill="currentColor" />
+        <g fill="#1d1a18"><circle cx="11" cy="10" r="2.2" /><circle cx="30" cy="15" r="2" /><circle cx="24" cy="32" r="2.1" /><circle cx="8" cy="26" r="1.8" /></g>
       </svg>
-      Casa Ribelle
+      <span class="brand-text">
+        <span class="brand-name">Casa Ribelle</span>
+        <span class="brand-sub">Pizza Napoletana &amp; Aperitivo · Rotteckring 2</span>
+      </span>
     </a>
-    <ul class="nav-links">
-      <li><a href="#ueber-uns">Über uns</a></li>
-      <li><a href="#highlights">Highlights</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
-  </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#regeln">Die Regeln</a></li>
+        <li><a href="#theater">Vor dem Vorhang</a></li>
+        <li><a href="#aperitivo">Aperitivo</a></li>
+        <li><a href="#kueche">Küche</a></li>
+        <li><a href="#kontakt">Reservieren</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-cta" href="tel:+4915210310056">Tisch anfragen</a>
+  </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <!-- Hero -->
+  <!-- ================= HERO =================
+       Der Name ist das Konzept: Ribelle heißt Rebell. Die Seite nimmt
+       das ernst und baut den Hauptabschnitt aus den strengen Regeln der
+       neapolitanischen Pizza — und der Frage, welche davon dieses Haus
+       bewusst bricht. -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <span class="eyebrow">Pizzeria Napoletana &amp; Aperitivo-Bar</span>
-        <h1>Casa Ribelle</h1>
-        <p class="hero-claim">Pizza, Pasta, Passione — mitten in Freiburg.</p>
-        <p class="hero-desc">
-          Neapolitanische Pizza aus dem Ofen, mediterrane Küche und Aperitivo-Bar
-          in einem — am Rotteckring, nahe dem Stadttheater, im Herzen der Freiburger Altstadt.
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Rotteckring 2 · gegenüber dem Stadttheater</p>
+        <h1>Neapel hat Regeln.<br /><em>Wir kennen sie alle.</em></h1>
+        <p class="hero-lead">
+          Vierundzwanzig Stunden Teigführung, 450 Grad, neunzig Sekunden im
+          Ofen, kein Nudelholz. Daran halten wir uns. Und dann gibt es die eine
+          Regel, an der wir uns nicht stören — deshalb heißt das Haus, wie es
+          heißt.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Tisch reservieren</a>
-          <a class="btn btn-ghost" href="#highlights">Mehr entdecken</a>
+          <a class="btn btn-primary" href="#regeln">Welche Regel?</a>
+          <a class="btn btn-outline" href="tel:+4915210310056">Tisch anfragen</a>
         </div>
       </div>
-      <div class="hero-art">
-        <svg viewBox="0 0 320 320" aria-hidden="true">
-          <circle cx="160" cy="160" r="150" fill="#f2e4cc"/>
-          <circle cx="160" cy="160" r="128" fill="#fbf3e6"/>
-          <path d="M160 40 L268 260 L52 260 Z" fill="#c1442c"/>
-          <path d="M160 40 L268 260 L52 260 Z" fill="none" stroke="#9c3320" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M160 68 L246 244 H74 Z" fill="#e7b25a" opacity="0.9"/>
-          <circle cx="120" cy="150" r="12" fill="#c1442c" stroke="#9c3320" stroke-width="2"/>
-          <circle cx="168" cy="120" r="10" fill="#c1442c" stroke="#9c3320" stroke-width="2"/>
-          <circle cx="196" cy="180" r="13" fill="#c1442c" stroke="#9c3320" stroke-width="2"/>
-          <circle cx="140" cy="205" r="9" fill="#c1442c" stroke="#9c3320" stroke-width="2"/>
-          <g fill="#5f6f39">
-            <ellipse cx="150" cy="95" rx="12" ry="7" transform="rotate(20 150 95)"/>
-            <ellipse cx="205" cy="140" rx="12" ry="7" transform="rotate(-35 205 140)"/>
-            <ellipse cx="110" cy="190" rx="12" ry="7" transform="rotate(55 110 190)"/>
-            <ellipse cx="175" cy="220" rx="12" ry="7" transform="rotate(-10 175 220)"/>
+
+      <!-- Pizza von oben, mit Leopardung am Rand. -->
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 340 340" fill="none">
+          <circle cx="170" cy="170" r="160" fill="#241f1c" />
+          <circle cx="170" cy="170" r="148" fill="#e8c98a" />
+          <!-- Leopardung: die dunklen Blasen am Rand, Kennzeichen echter
+               Napoletana. Kein Zufallsmuster, sondern das Gütezeichen. -->
+          <g fill="#5b3a22">
+            <circle cx="170" cy="34" r="10" /><circle cx="240" cy="52" r="7.4" />
+            <circle cx="290" cy="106" r="8.6" /><circle cx="306" cy="180" r="6.6" />
+            <circle cx="280" cy="248" r="9" /><circle cx="216" cy="296" r="7" />
+            <circle cx="146" cy="306" r="8.4" /><circle cx="80" cy="272" r="6.8" />
+            <circle cx="40" cy="212" r="8.8" /><circle cx="36" cy="136" r="7" />
+            <circle cx="74" cy="72" r="9.2" /><circle cx="126" cy="40" r="6.4" />
+          </g>
+          <circle cx="170" cy="170" r="118" fill="#c2402c" />
+          <!-- Fior di latte -->
+          <g fill="#f6efdf">
+            <ellipse cx="132" cy="128" rx="26" ry="21" /><ellipse cx="216" cy="140" rx="23" ry="19" />
+            <ellipse cx="176" cy="196" rx="28" ry="22" /><ellipse cx="112" cy="204" rx="21" ry="17" />
+            <ellipse cx="228" cy="216" rx="20" ry="16" />
+          </g>
+          <!-- Basilikum -->
+          <g fill="#4c7a3c">
+            <path d="M170 108c10-14 26-14 34-4-8 12-24 16-34 4Z" />
+            <path d="M112 168c-14-8-16-24-6-32 12 8 16 24 6 32Z" />
+            <path d="M212 250c14 6 18 22 8 30-12-6-18-22-8-30Z" />
+          </g>
+          <!-- Olivenöl-Glanz -->
+          <g fill="#f2d98e" opacity=".5">
+            <circle cx="152" cy="160" r="5" /><circle cx="200" cy="180" r="4" /><circle cx="164" cy="230" r="4.4" />
           </g>
         </svg>
       </div>
     </div>
   </section>
 
-  <div class="divider" aria-hidden="true">
-    <svg viewBox="0 0 200 30">
-      <path d="M0 15 Q25 0 50 15 T100 15 T150 15 T200 15" fill="none" stroke="#5f6f39" stroke-width="2"/>
-      <ellipse cx="25" cy="10" rx="9" ry="5" fill="#5f6f39" transform="rotate(-20 25 10)"/>
-      <ellipse cx="75" cy="19" rx="9" ry="5" fill="#5f6f39" transform="rotate(20 75 19)"/>
-      <ellipse cx="125" cy="10" rx="9" ry="5" fill="#5f6f39" transform="rotate(-20 125 10)"/>
-      <ellipse cx="175" cy="19" rx="9" ry="5" fill="#5f6f39" transform="rotate(20 175 19)"/>
-    </svg>
-  </div>
+  <div class="crust-band" aria-hidden="true"></div>
 
-  <!-- Über uns -->
-  <section class="about" id="ueber-uns">
-    <div class="container">
-      <span class="eyebrow">La nostra storia</span>
-      <h2>Über uns</h2>
-      <div class="about-grid">
-        <div class="about-art" aria-hidden="true">
-          <svg viewBox="0 0 260 260">
-            <circle cx="130" cy="130" r="120" fill="#f2e4cc"/>
-            <ellipse cx="90" cy="140" rx="34" ry="46" fill="#c1442c" transform="rotate(-15 90 140)"/>
-            <ellipse cx="90" cy="140" rx="34" ry="46" fill="none" stroke="#9c3320" stroke-width="3" transform="rotate(-15 90 140)"/>
-            <line x1="90" y1="98" x2="86" y2="82" stroke="#5f6f39" stroke-width="4" stroke-linecap="round" transform="rotate(-15 90 140)"/>
-            <ellipse cx="170" cy="120" rx="30" ry="40" fill="#c1442c" transform="rotate(18 170 120)"/>
-            <ellipse cx="170" cy="120" rx="30" ry="40" fill="none" stroke="#9c3320" stroke-width="3" transform="rotate(18 170 120)"/>
-            <line x1="170" y1="82" x2="175" y2="66" stroke="#5f6f39" stroke-width="4" stroke-linecap="round" transform="rotate(18 170 120)"/>
-            <g fill="#5f6f39">
-              <ellipse cx="130" cy="190" rx="18" ry="10" transform="rotate(-10 130 190)"/>
-              <ellipse cx="150" cy="200" rx="16" ry="9" transform="rotate(20 150 200)"/>
-              <ellipse cx="110" cy="202" rx="16" ry="9" transform="rotate(-30 110 202)"/>
-            </g>
-          </svg>
-        </div>
-        <div class="about-text">
+  <!-- ================= DIE REGELN ================= -->
+  <section class="section rules" id="regeln">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Il disciplinare</p>
+        <h2>Fünf Regeln, an die wir uns halten</h2>
+        <p class="section-note">
+          Die neapolitanische Pizza ist eines der wenigen Gerichte mit
+          schriftlich festgelegten Regeln. Die meisten davon sind kein
+          Traditionsgehabe, sondern der Grund, warum sie schmeckt, wie sie
+          schmeckt.
+        </p>
+      </div>
+
+      <ol class="rulelist">
+        <li>
+          <span class="rl-no">I</span>
+          <div>
+            <h3>Der Teig bekommt einen Tag</h3>
+            <p>Mindestens vierundzwanzig Stunden Führung, wenig Hefe, viel Zeit. Ein Teig, der in zwei Stunden fertig ist, liegt einem auch zwei Stunden später noch im Magen.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rl-no">II</span>
+          <div>
+            <h3>Kein Nudelholz</h3>
+            <p>Der Teigling wird mit den Fingerspitzen von der Mitte nach außen gedrückt. Die Luft muss in den Rand wandern — ein Nudelholz drückt sie heraus.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rl-no">III</span>
+          <div>
+            <h3>Neunzig Sekunden bei 450 Grad</h3>
+            <p>So kurz, dass der Boden gart, bevor er austrocknet. Deshalb ist die Mitte weich und nicht knusprig — das ist kein Fehler, das ist der Punkt.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rl-no">IV</span>
+          <div>
+            <h3>Der Rand darf Flecken haben</h3>
+            <p><em>Leopardatura</em> nennt man die dunklen Blasen am Cornicione. Wer sie wegbacken will, backt zu lang und zu kalt.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rl-no">V</span>
+          <div>
+            <h3>Wenig obendrauf</h3>
+            <p>Tomate, Käse, Basilikum, Öl. Je mehr auf der Pizza liegt, desto weniger schmeckt man den Teig — und der ist die eigentliche Arbeit.</p>
+          </div>
+        </li>
+      </ol>
+
+      <!-- Der Namensgeber -->
+      <aside class="rebel">
+        <span class="rebel-mark" aria-hidden="true">VI</span>
+        <div>
+          <h3>Und die Regel, die wir brechen</h3>
           <p>
-            Bei Casa Ribelle dreht sich alles um neapolitanische Pizza aus dem Ofen,
-            mediterrane Gerichte und Zutaten, die einfach nach Sonne schmecken. Wir
-            kochen so, wie es sich in einer echten Trattoria gehört — mit Herz,
-            Handwerk und ganz viel Freude am Teilen.
+            In Neapel gehört zur Pizza kein Aperitivo, sondern Bier oder gar
+            nichts. Bei uns steht der Spritz auf dem Tisch, bevor der Ofen die
+            erste Pizza hergibt — weil ein Abend nicht mit dem Essen beginnt,
+            sondern eine Stunde davor.
           </p>
-          <p>
-            Als Restaurant, Bar und Treffpunkt in einem verbinden wir süditalienisches
-            Flair mit einem entspannten Aperitivo — nahe dem Stadttheater, mitten in der
-            Freiburger Altstadt. Ob schneller Mittagstisch, Pizza am Feierabend oder
-            Drink nach dem Theaterbesuch: Wir laden Sie ein, ein Stück Italien zu
-            genießen — unkompliziert, herzlich und lecker.
-          </p>
+          <p class="rebel-sign">Deshalb <em>Ribelle</em>.</p>
         </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= VOR DEM VORHANG =================
+       Die Lage gegenüber dem Stadttheater war im alten Entwurf ein
+       Halbsatz. Für ein Restaurant an dieser Stelle ist sie die halbe
+       Geschäftsgrundlage. -->
+  <section class="section theatre" id="theater">
+    <div class="wrap theatre-grid">
+      <div>
+        <p class="kicker">Rotteckring</p>
+        <h2>Zwischen Vorstellung und Vorhang</h2>
+        <p>
+          Das Stadttheater liegt auf der anderen Straßenseite. Wer um acht in
+          der Vorstellung sitzen will, hat vorher genau ein Zeitfenster — und
+          wer danach noch nicht nach Hause will, sucht einen Ort, an dem um
+          halb elf noch etwas geht.
+        </p>
+        <p>
+          Sagen Sie bei der Reservierung, dass Sie ins Theater gehen. Dann
+          kommt die Pizza früher, und niemand fragt nach dem Dessert, während
+          Sie schon auf die Uhr sehen.
+        </p>
+      </div>
+
+      <ul class="timeline">
+        <li>
+          <span class="tl-time">18:30</span>
+          <div><h3>Tisch</h3><p>Aperitivo, dann direkt die Bestellung. Zeit genug, ohne Hetze.</p></div>
+        </li>
+        <li>
+          <span class="tl-time">19:10</span>
+          <div><h3>Pizza</h3><p>Neunzig Sekunden im Ofen — die Küche ist der schnellste Teil des Abends.</p></div>
+        </li>
+        <li>
+          <span class="tl-time">19:45</span>
+          <div><h3>Rüber</h3><p>Über die Straße, und Sie sitzen vor dem dritten Klingeln.</p></div>
+        </li>
+        <li class="is-after">
+          <span class="tl-time">22:15</span>
+          <div><h3>Danach</h3><p>Ein Glas, ein Teller Antipasti, und die Diskussion über die Inszenierung.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= APERITIVO ================= -->
+  <section class="section aperitivo" id="aperitivo">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Ora dell'aperitivo</p>
+        <h2>Aperitivo ist keine Getränkekategorie</h2>
+        <p class="section-note">
+          Es ist eine Uhrzeit. Zwischen Feierabend und Abendessen, mit etwas
+          Bitterem im Glas und etwas Salzigem daneben — der Sinn ist, Hunger zu
+          machen, nicht ihn zu stillen.
+        </p>
+      </div>
+
+      <div class="aper-grid">
+        <article class="aper-card">
+          <span class="ac-glass" aria-hidden="true">
+            <svg viewBox="0 0 60 80" fill="none"><path d="M8 10h44l-6 34a10 10 0 0 1-10 8h-12a10 10 0 0 1-10-8z" fill="#e2622b" stroke="#f6efdf" stroke-width="2.4"/><path d="M30 52v20M20 74h20" stroke="#f6efdf" stroke-width="2.4" stroke-linecap="round"/><circle cx="40" cy="22" r="5" fill="#f2a33c"/></svg>
+          </span>
+          <h3>Spritz</h3>
+          <p>Prosecco, Bitter, Soda, eine Scheibe Orange. Bitter genug, dass der Appetit kommt, leicht genug, dass zwei davon gehen.</p>
+        </article>
+
+        <article class="aper-card">
+          <span class="ac-glass" aria-hidden="true">
+            <svg viewBox="0 0 60 80" fill="none"><path d="M14 8h32v34a16 16 0 0 1-32 0z" fill="#7d1f2a" stroke="#f6efdf" stroke-width="2.4"/><path d="M30 58v14M20 74h20" stroke="#f6efdf" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Wein, offen</h3>
+          <p>Süditalienisch, unkompliziert, im Glas. Nichts, worüber man vorher ein Gespräch führen muss.</p>
+        </article>
+
+        <article class="aper-card">
+          <span class="ac-glass" aria-hidden="true">
+            <svg viewBox="0 0 60 80" fill="none"><ellipse cx="30" cy="42" rx="24" ry="22" fill="#e8c98a" stroke="#f6efdf" stroke-width="2.4"/><g fill="#4c7a3c"><circle cx="22" cy="38" r="5"/><circle cx="38" cy="44" r="5"/><circle cx="30" cy="52" r="4.4"/></g></svg>
+          </span>
+          <h3>Stuzzichini</h3>
+          <p>Oliven, Focaccia, ein paar Antipasti auf dem Tisch. Gehört dazu und wird nicht extra angekündigt.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Highlights -->
-  <section class="highlights" id="highlights">
-    <div class="container">
-      <span class="eyebrow">Cosa amiamo</span>
-      <h2>Highlights</h2>
-      <p class="section-intro">
-        Vier gute Gründe, bei Casa Ribelle vorbeizuschauen.
-      </p>
-      <div class="card-grid">
-
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M24 6 L42 40 H6 Z" fill="#c1442c"/>
-              <path d="M24 16 L34 36 H14 Z" fill="#e7b25a"/>
-              <circle cx="20" cy="27" r="2.4" fill="#c1442c"/>
-              <circle cx="27" cy="24" r="2" fill="#c1442c"/>
-              <circle cx="25" cy="31" r="1.8" fill="#c1442c"/>
-            </svg>
-          </div>
-          <h3>Pizza Napoletana</h3>
-          <p>Dünn ausgezogener Boden, luftig-lockerer Rand — nach neapolitanischer Tradition gebacken und heiß serviert.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="24" cy="27" r="15" fill="none" stroke="#c1442c" stroke-width="3"/>
-              <path d="M17 20c1 6 1 10 -1 14M24 18c1 7 1 11 -1 15M31 20c1 6 1 10 -1 14" stroke="#e7b25a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Italienische Klassiker</h3>
-          <p>Von cremiger Pasta bis herzhaften Antipasti — vertraute Gerichte, liebevoll zubereitet.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <rect x="10" y="30" width="28" height="10" rx="2" fill="#5f6f39"/>
-              <path d="M24 8c-4 4-4 10 0 14 4-4 4-10 0-14Z" fill="#e7b25a"/>
-              <rect x="22.4" y="20" width="3.2" height="10" fill="#9c3320"/>
-            </svg>
-          </div>
-          <h3>Aperitivo-Bar</h3>
-          <p>Restaurant, Bar und Treffpunkt in einem — mit süditalienischem Flair, nahe dem Stadttheater.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="18" cy="26" r="9" fill="#c1442c"/>
-              <ellipse cx="32" cy="22" rx="9" ry="6" fill="#5f6f39" transform="rotate(-20 32 22)"/>
-              <line x1="18" y1="17" x2="16" y2="10" stroke="#5f6f39" stroke-width="2.4" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Frische Zutaten</h3>
-          <p>Reife Tomaten, duftendes Basilikum, gutes Öl — einfache Dinge, richtig gemacht.</p>
-        </div>
-
+  <!-- ================= KÜCHE ================= -->
+  <section class="section kitchen" id="kueche">
+    <div class="wrap kitchen-grid">
+      <div>
+        <p class="kicker">La cucina</p>
+        <h2>Was neben der Pizza aus der Küche kommt</h2>
+        <p>
+          Der Ofen ist der Mittelpunkt, aber nicht das ganze Haus. Daneben
+          steht mediterrane Küche, wie sie in einer Trattoria eben steht:
+          Pasta, Antipasti, gutes Öl, reife Tomaten, Basilikum, das man riecht,
+          bevor der Teller kommt.
+        </p>
+        <p>
+          Geteilt wird ausdrücklich. Wer zu viert kommt und vier Teller
+          bestellt, ohne sie in die Mitte zu stellen, macht etwas falsch —
+          jedenfalls nach unserem Verständnis von einem Abend.
+        </p>
       </div>
+
+      <ul class="kitchen-list">
+        <li><span>Pizza Napoletana</span><em>aus dem Ofen, in neunzig Sekunden</em></li>
+        <li><span>Pasta</span><em>italienische Klassiker, cremig oder mit Sugo</em></li>
+        <li><span>Antipasti</span><em>zum Teilen, vor oder statt der Hauptspeise</em></li>
+        <li><span>Mediterranes</span><em>was die Saison und der Markt hergeben</em></li>
+      </ul>
     </div>
   </section>
 
-  <!-- Standort & Kontakt -->
-  <section class="contact" id="kontakt">
-    <div class="container">
-      <span class="eyebrow">Vi aspettiamo</span>
-      <h2>Standort &amp; Kontakt</h2>
-      <p class="section-intro">
-        Wir freuen uns auf Ihren Besuch am Rotteckring, mitten in der Freiburger Altstadt.
-      </p>
-      <div class="contact-grid">
+  <!-- ================= RESERVIEREN ================= -->
+  <section class="section contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Vi aspettiamo</p>
+        <h2>Rotteckring 2</h2>
+        <p class="section-note">
+          Am Rotteckring, gegenüber dem Stadttheater, wenige Schritte vom
+          Colombipark. Für Gruppen und für Theaterabende lohnt ein Anruf
+          vorher — dann steht der Tisch, wenn Sie kommen.
+        </p>
 
-        <div class="contact-card">
-          <h3>
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="#fbf3e6" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.6" stroke="#fbf3e6" stroke-width="1.6"/></svg>
-            Adresse
-          </h3>
-          <p>Casa Ribelle<br>Rotteckring 2<br>79098 Freiburg im Breisgau</p>
-          <div class="contact-links">
-            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Rotteckring%202%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route in Google Maps</a>
-          </div>
-
-          <h3 style="margin-top:28px;">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#fbf3e6" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#fbf3e6" stroke-width="1.6" stroke-linecap="round"/></svg>
-            Öffnungszeiten
-          </h3>
-          <ul class="hours-list">
-            <li><span>Di – Sa</span><span>12:00 – 14:30 &amp; 18:00 – 22:00</span></li>
-            <li><span>Sonntag</span><span>12:00 – 15:00</span></li>
-            <li><span>Montag</span><span>Ruhetag</span></li>
-          </ul>
-          <p class="placeholder-note">Platzhalter-Angaben — bitte vor Veröffentlichung bestätigen.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="tel:+4915210310056">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5c.6-.6 1.6-.6 2.2 0l1.6 1.6c.5.5.6 1.3.2 1.9l-1 1.5c-.3.4-.3.9 0 1.3 1 1.4 2.3 2.7 3.7 3.7.4.3.9.3 1.3 0l1.5-1c.6-.4 1.4-.3 1.9.2l1.6 1.6c.6.6.6 1.6 0 2.2l-1 1c-.7.7-1.8 1-2.8.7-3-.9-5.7-2.6-7.9-4.8-2.2-2.2-3.9-4.9-4.8-7.9-.3-1 0-2.1.7-2.8l1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span><strong>01521 0310056</strong><span>Tischanfrage und Reservierung · Nummer laut Branchenbuch-Eintrag</span></span>
+          </a>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rotteckring%202%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c-5-5-8-8.6-8-12a8 8 0 0 1 16 0c0 3.4-3 7-8 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span><strong>Rotteckring 2</strong><span>79098 Freiburg im Breisgau · Route planen</span></span>
+          </a>
         </div>
-
-        <div class="contact-card">
-          <h3>
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#fbf3e6" stroke-width="1.6"/><path d="M3.5 6.5 12 13 20.5 6.5" stroke="#fbf3e6" stroke-width="1.6"/></svg>
-            Reservierung &amp; Anfragen
-          </h3>
-          <p>Schreiben oder rufen Sie uns für Tischreservierungen, Gruppen oder Fragen zur Speisekarte.</p>
-          <div class="contact-links">
-            <a class="btn btn-primary" href="tel:+4915210310056">01521 0310056</a>
-            <a class="btn btn-ghost" href="mailto:info@casa-ribelle.de?subject=Tischreservierung%20Casa%20Ribelle">info@casa-ribelle.de</a>
-          </div>
-          <p class="placeholder-note">Telefonnummer laut Branchenbuch-Eintrag; E-Mail-Adresse ist ein Platzhalter — bitte vor Veröffentlichung beide bestätigen.</p>
-
-          <h3 style="margin-top:28px;">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20c2-6 6-9 8-9s6 3 8 9" stroke="#fbf3e6" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="7" r="3.2" stroke="#fbf3e6" stroke-width="1.6"/></svg>
-            Für Sie da
-          </h3>
-          <p>Ob spontane Pizza am Feierabend oder geplanter Familienabend — wir bereiten Ihnen gerne einen Platz.</p>
-        </div>
-
       </div>
+
+      <aside class="hours-card">
+        <h3>Öffnungszeiten</h3>
+        <p class="hours-lead">
+          Für dieses Haus sind keine Öffnungszeiten verlässlich veröffentlicht.
+          Der vorige Entwurf zeigte an dieser Stelle erfundene Zeiten — die
+          stehen hier bewusst nicht mehr.
+        </p>
+        <p>
+          Bis das geklärt ist, gilt das Einfachste: kurz anrufen. Für einen
+          Theaterabend ist das ohnehin die bessere Variante, weil dann gleich
+          die Uhrzeit im Kalender steht.
+        </p>
+        <a class="btn btn-primary" href="tel:+4915210310056">01521 0310056 anrufen</a>
+        <p class="hours-todo">
+          <strong>Vor dem Launch:</strong> Öffnungszeiten, Ruhetag und eine
+          echte E-Mail-Adresse beim Haus erfragen und hier eintragen.
+        </p>
+      </aside>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <p>&copy; 2026 Casa Ribelle · Rotteckring 2, Freiburg im Breisgau</p>
-  <p class="footer-note">Website-Entwurf — unverbindlicher Vorschlag zur Veranschaulichung eines möglichen Webauftritts.</p>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Casa Ribelle</span>
+      <p>Rotteckring 2 · 79098 Freiburg im Breisgau<br />Pizza Napoletana, mediterrane Küche und Aperitivo — gegenüber dem Stadttheater.</p>
+    </div>
+    <nav class="footer-links" aria-label="Fußzeile">
+      <a href="#regeln">Die Regeln</a>
+      <a href="#theater">Vor dem Vorhang</a>
+      <a href="#aperitivo">Aperitivo</a>
+      <a href="tel:+4915210310056">01521 0310056</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Casa Ribelle</span>
+    <span class="footer-note">Unverbindlicher Website-Entwurf, keine offizielle Seite des Hauses. Telefonnummer laut Branchenbuch-Eintrag; Öffnungszeiten, Impressum und Datenschutzerklärung fehlen und sind vor einem echten Launch Pflicht.</span>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
